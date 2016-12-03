@@ -5,5 +5,5 @@ import {Component} from '@angular/core';
   selector: 'movie-list'
 })
 export class MovieListComponent {
-
+ 
 }
