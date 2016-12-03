@@ -1,12 +1,29 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MainMovieComponent} from './movies/main-movie.component';
+
+import {AppComponent} from './app.component';
+import {DashboardComponent} from './movies/dashboard.component';
+import {MovieListComponent} from './movies/movie-list.component';
+import {MovieDetailComponent} from './movies/movie-detail.component';
+
+import {AppRoutingModule} from './app-routing.module';
+import {MaterializeDirective} from 'angular2-materialize';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [
-    MainMovieComponent
+  imports:      [ 
+    BrowserModule,
+    AppRoutingModule
   ],
-  bootstrap: [MainMovieComponent]
+  declarations: [
+    AppComponent,
+    MaterializeDirective,
+    DashboardComponent,
+    MovieListComponent,
+    MovieDetailComponent
+  ],
+  providers: [
+    
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { } 

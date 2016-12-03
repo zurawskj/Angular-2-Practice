@@ -9,17 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    DashboardComponent = __decorate([
+    AppComponent.prototype.ngOnInit = function () {
+        //init materialiaze sidenav
+        jQuery('.button-collapse').sideNav();
+    };
+    AppComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/movies/dashboard.component.html',
-            selector: 'dashboard-component'
+            selector: 'my-app',
+            templateUrl: './app/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=main-movie.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

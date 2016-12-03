@@ -22,4 +22,4 @@ var DashboardComponent = (function () {
     return DashboardComponent;
 }());
 exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=main-movie.component.js.map
+//# sourceMappingURL=dashboard.component.js.map

@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var MovieListComponent = (function () {
+    function MovieListComponent() {
     }
-    DashboardComponent = __decorate([
+    MovieListComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/movies/dashboard.component.html',
-            selector: 'dashboard-component'
+            templateUrl: './app/movies/movie-list.component.html',
+            selector: 'movie-list'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], MovieListComponent);
+    return MovieListComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=main-movie.component.js.map
+exports.MovieListComponent = MovieListComponent;
+//# sourceMappingURL=movie-list.component.js.map

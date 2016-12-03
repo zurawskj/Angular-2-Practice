@@ -9,17 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var router_1 = require('@angular/router');
+var dashboard_component_1 = require('./movies/dashboard.component');
+var routes = [
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+    { path: 'dashboard', component: dashboard_component_1.DashboardComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    DashboardComponent = __decorate([
-        core_1.Component({
-            templateUrl: './app/movies/dashboard.component.html',
-            selector: 'dashboard-component'
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=main-movie.component.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map
