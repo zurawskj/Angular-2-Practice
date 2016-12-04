@@ -1,1 +1,9 @@
-Movie List Component
+<div class="col s12" *ngFor="let movie of movies">
+    <div class="card movie-card lighten-4"
+        [class.green]="movie === selectedMovie"
+        (click)="onSelect(movie)">
+        <span class="card-title">
+            {{movie.name}}
+        </span>
+    </div>
+</div>
